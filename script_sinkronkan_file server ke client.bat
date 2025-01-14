@@ -33,7 +33,7 @@ if not exist %CLIENT_D3DS_CACHE% (
     echo Folder D3DSCache sudah ada.
 )
 
-if not exit %CLIENT_DELTA_FORCE_CACHE% (
+if not exist %CLIENT_DELTA_FORCE_CACHE% (
     echo Folder DeltaForce tidak ditemukan, membuat folder baru...
     mkdir %CLIENT_DELTA_FORCE_CACHE%
 ) else(
