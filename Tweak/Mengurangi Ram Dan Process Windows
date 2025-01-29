@@ -1,0 +1,7 @@
+regedit
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control
+SvcHostSplitThresholdInKB
+
+source :
+https://www.tenforums.com/tutorials/94628-change-split-threshold-svchost-exe-windows-10-a.html
