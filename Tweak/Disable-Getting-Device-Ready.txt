@@ -1,0 +1,8 @@
+regedit
+
+HKEY_LOCAL_MACHINE\SYSTEM\Setup
+
+
+Hapus Value Dari
+- RespecializeCmdLine
+- WorkingDirectory
