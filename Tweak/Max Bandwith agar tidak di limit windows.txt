@@ -1,0 +1,5 @@
+Buka group policy atau gpedit.msc
+
+Computer Configuration- Administrative Templates - Network - Qos Packet Scheduler
+Limit reservable Bandwith = Enabled, Setting ke 0
+Set Timer Resolution = 0.5
