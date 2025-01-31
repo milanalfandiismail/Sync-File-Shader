@@ -32,6 +32,7 @@ set CLIENT_D3DS_CACHE=%localappdata%\D3DSCache
 set CLIENT_DELTA_FORCE_CACHE="G:\Steam\steamapps\common\Delta Force\Game\DeltaForce\Saved"
 set CLIENT_WUTHERING_WAVES_CACHE="G:\Wuthering Waves\Wuthering Waves Game\Client\Saved\PSO"
 set CLIENT_APEX_CACHE="%USERPROFILE%\Saved Games\Respawn\Apex\local"
+set CLIENT_VALORANT_CACHE=%localappdata%\VALORANT
 
 REM Memeriksa apakah folder tujuan di client sudah ada, jika tidak, buat folder
 if not exist %CLIENT_DX_CACHE% (
@@ -83,6 +84,7 @@ set SERVER_D3DS_CACHE=%SERVER_PATH%\D3DSCache
 set SERVER_DELTA_FORCE_CACHE=%SERVER_PATH%\Delta_Force
 set SERVER_WUTHERING_WAVES_CACHE=%SERVER_PATH%\Wuthering_Waves
 set SERVER_APEX_CACHE=%SERVER_PATH%\Apex
+set SERVER_CLIENT_CACHE=\\10.10.10.10\DataValorant
 
 
 REM Salin file dari DxCache di server ke folder DxCache di client
@@ -103,6 +105,7 @@ robocopy %SERVER_WUTHERING_WAVES_CACHE% %CLIENT_WUTHERING_WAVES_CACHE% /E /Z /XO
 REM Salin file Apex Shader
 robocopy %SERVER_APEX_CACHE% %CLIENT_APEX_CACHE% *.pso /E /Z /XO /W:5
 
+REM Salin file Valorant Cache + Setting
+robocopy %SERVER_CLIENT_CACHE% %CLIENT_VALORANT_CACHE% /E /Z /XO /W:5 /XD "Logs"
+
 echo Transfer selesai.
-
-
