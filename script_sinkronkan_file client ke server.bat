@@ -34,6 +34,7 @@ set NEW_FOLDER3=%NEW_FOLDER%\D3DSCache
 set NEW_FOLDER4=%NEW_FOLDER%\Delta_Force
 set NEW_FOLDER5=%NEW_FOLDER%\Wuthering_Waves
 set NEW_FOLDER6=%NEW_FOLDER%\Apex
+set NEW_FOLDER7=%SERVER_PATH%\DataValorant
 
 REM Memeriksa apakah folder tujuan sudah ada dan membuat folder baru jika tidak ada
 if not exist %NEW_FOLDER% (
@@ -81,6 +82,7 @@ set SOURCE_DIR3=%localappdata%\D3DSCache
 set SOURCE_DIR4=G:\Steam\steamapps\common\Delta Force\Game\DeltaForce\Saved
 set SOURCE_DIR5=G:\Wuthering Waves\Wuthering Waves Game\Client\Saved\PSO
 set SOURCE_DIR6=%USERPROFILE%\Saved Games\Respawn\Apex\local
+set SOURCE_DIR7=%localappdata%\VALORANT
 
 REM Salin file dari DxCache ke folder tujuan
 robocopy "%SOURCE_DIR1%" "%NEW_FOLDER1%" /E /Z /XO /W:5
@@ -100,5 +102,7 @@ robocopy "%SOURCE_DIR5%" "%NEW_FOLDER5%" /E /Z /XO /W:5
 REM Salin file shader Apex
 robocopy "%SOURCE_DIR6%" "%NEW_FOLDER6%" *.pso /E /Z /XO /W:5
 
+REM Salin file cache valorant + setting
+robocopy "%SOURCE_DIR7%" "%NEW_FOLDER7%" /E /Z /XO /W:5 /XD "Logs"
 
 echo Transfer selesai.
