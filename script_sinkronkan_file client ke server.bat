@@ -85,24 +85,24 @@ set SOURCE_DIR6=%USERPROFILE%\Saved Games\Respawn\Apex\local
 set SOURCE_DIR7=%localappdata%\VALORANT
 
 REM Salin file dari DxCache ke folder tujuan
-robocopy "%SOURCE_DIR1%" "%NEW_FOLDER1%" /E /Z /XO /W:5
+robocopy "%SOURCE_DIR1%" "%NEW_FOLDER1%" /E /Z /XO /W:0 /R:10
 
 REM Salin file dari DxcCache ke folder tujuan
-robocopy "%SOURCE_DIR2%" "%NEW_FOLDER2%" /E /Z /XO /W:5
+robocopy "%SOURCE_DIR2%" "%NEW_FOLDER2%" /E /Z /XO /W:0 /R:10
 
 REM Salin file dari D3DSCache ke folder tujuan
-robocopy "%SOURCE_DIR3%" "%NEW_FOLDER3%" /E /Z /XO /W:5
+robocopy "%SOURCE_DIR3%" "%NEW_FOLDER3%" /E /Z /XO /W:0 /R:10
 
 REM Salin file Shader Delta Force
-robocopy "%SOURCE_DIR4%" "%NEW_FOLDER4%" *.ushaderprecache /E /Z /XO /W:5
+robocopy "%SOURCE_DIR4%" "%NEW_FOLDER4%" *.ushaderprecache /E /Z /XO /W:0 /R:10
 
 REM Salin file shader Wuthering_Waves
-robocopy "%SOURCE_DIR5%" "%NEW_FOLDER5%" /E /Z /XO /W:5
+robocopy "%SOURCE_DIR5%" "%NEW_FOLDER5%" /E /Z /XO /W:0 /R:10
 
 REM Salin file shader Apex
-robocopy "%SOURCE_DIR6%" "%NEW_FOLDER6%" *.pso /E /Z /XO /W:5
+robocopy "%SOURCE_DIR6%" "%NEW_FOLDER6%" *.pso /E /Z /XO /W:0 /R:10
 
 REM Salin file cache valorant + setting
-robocopy "%SOURCE_DIR7%" "%NEW_FOLDER7%" /E /Z /XO /W:5 /XD "Logs"
+robocopy "%SOURCE_DIR7%" "%NEW_FOLDER7%" /E /Z /XO /W:0 /R:10 /XD "Logs" "CrashReportClient"
 
 echo Transfer selesai.
