@@ -88,24 +88,24 @@ set SERVER_CLIENT_CACHE=\\10.10.10.10\DataValorant
 
 
 REM Salin file dari DxCache di server ke folder DxCache di client
-robocopy %SERVER_DX_CACHE% %CLIENT_DX_CACHE% /E /Z /XO /W:5
+robocopy %SERVER_DX_CACHE% %CLIENT_DX_CACHE% /E /Z /XO /W:0 /R:10
 
 REM Salin file dari DxcCache di server ke folder DxcCache di client
-robocopy %SERVER_DXC_CACHE% %CLIENT_DXC_CACHE% /E /Z /XO /W:5
+robocopy %SERVER_DXC_CACHE% %CLIENT_DXC_CACHE% /E /Z /XO /W:0 /R:10
 
 REM Salin file dari D3DSCache di server ke folder D3DSCache di client
-robocopy %SERVER_D3DS_CACHE% %CLIENT_D3DS_CACHE% /E /Z /XO /W:5
+robocopy %SERVER_D3DS_CACHE% %CLIENT_D3DS_CACHE% /E /Z /XO /W:0 /R:10
 
 REM Salin file DeltaForce Shader
-robocopy %SERVER_DELTA_FORCE_CACHE% %CLIENT_DELTA_FORCE_CACHE% *.ushaderprecache /E /Z /XO /W:5
+robocopy %SERVER_DELTA_FORCE_CACHE% %CLIENT_DELTA_FORCE_CACHE% *.ushaderprecache /E /Z /XO /W:0 /R:10
 
 REM Salin file Wuthering_Waves Shader
-robocopy %SERVER_WUTHERING_WAVES_CACHE% %CLIENT_WUTHERING_WAVES_CACHE% /E /Z /XO /W:5
+robocopy %SERVER_WUTHERING_WAVES_CACHE% %CLIENT_WUTHERING_WAVES_CACHE% /E /Z /XO /W:0 /R:10
 
 REM Salin file Apex Shader
-robocopy %SERVER_APEX_CACHE% %CLIENT_APEX_CACHE% *.pso /E /Z /XO /W:5
+robocopy %SERVER_APEX_CACHE% %CLIENT_APEX_CACHE% *.pso /E /Z /XO /W:0 /R:10
 
 REM Salin file Valorant Cache + Setting
-robocopy %SERVER_CLIENT_CACHE% %CLIENT_VALORANT_CACHE% /E /Z /XO /W:5 /XD "Logs"
+robocopy %SERVER_CLIENT_CACHE% %CLIENT_VALORANT_CACHE% /E /Z /XO /W:0 /R:10 /XD "Logs" "CrashReportClient"
 
 echo Transfer selesai.
