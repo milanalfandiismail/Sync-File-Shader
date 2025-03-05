@@ -1,1 +1,3 @@
-tes
+Stop Automatic Driver Install Windows
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching
+ganti SearchOrderConfig dari 1 menjadi 0
