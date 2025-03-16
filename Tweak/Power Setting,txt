@@ -1,0 +1,3 @@
+- Nyalakan Process idle demote dan promote thereshold - Value menjadi 100%
+- Nyalakan idle Resiliency - Value menjadi 1 ms
+- Nyalakan Process Performance core parking min cores - Value menjadi 100%
