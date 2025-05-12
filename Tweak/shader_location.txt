@@ -1,0 +1,7 @@
+DX 11 = %localappdata%/AMD/DxCache (Untuk AMD)
+DX 12 = %localappdata%/AMD/DxcCache (Untuk AMD)
+DIRECTX DARI WINDOWS = C:\Users\Admin\AppData\Local\D3DSCache (Berlaku untuk semua merek GPU)
+
+Wuthering Waves = G:\Wuthering Waves\Wuthering Waves Game\Client\Saved\PSO\D3D11\RTOff (agar tidak compiling shaders saat login, tapi file yang di DxCache harus sudah ada)
+Delta Force = G:\Steam\steamapps\common\Delta Force\Game\DeltaForce\Saved filenya berekstensi .USHADERPRECACHE dan jangan lupa simpan config agar tidak terjadi preparing shaders saat login
+APEX LEGENDS = C:\Users\Admin\Saved Games\Respawn\Apex\local filenya berekstensi .pso (admin = nama device anda)
