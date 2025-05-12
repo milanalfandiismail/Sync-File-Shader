@@ -1,0 +1,4 @@
+Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem
+
+ubah value menjadi 2
+default = 1
