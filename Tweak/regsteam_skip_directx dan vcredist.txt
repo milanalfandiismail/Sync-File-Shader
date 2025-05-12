@@ -1,0 +1,2 @@
+STEAM = Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Valve\Steam\Apps\CommonRedist (jalankan di server terlebih dahulu lalu, import ke client)
+EASYANTICHEAT = (masih dicar)
